@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Position 비교</title>
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #f0f0f0;
+    border: 2px solid #aaa;
+    margin-bottom: 20px;
+  }
+  .static {
+    position: static;
+    background: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .relative {
+    position: relative;
+    background: lightgreen;
+    padding: 10px;
+    top: 20px;
+  }
+  .absolute {
+    position: absolute;
+    background: lightcoral;
+    padding: 10px;
+    top: 50px;
+    left: 50px;
+  }
+  .fixed {
+    position: fixed;
+    background: lightgoldenrodyellow;
+    padding: 10px;
+    top: 10px;
+    right: 10px;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="static">Static: 문서 흐름 그대로</div>
+    <div class="relative">Relative: 자신의 위치 기준으로 이동</div>
+    <div class="absolute">Absolute: 가장 가까운 position 기준으로 배치</div>
+  </div>
+  <div class="fixed">Fixed: 뷰포트 기준 고정</div>
+</body>
+</html>
